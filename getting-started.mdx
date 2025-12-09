@@ -1,0 +1,111 @@
+---
+title: Getting Started with YTMEC
+description: A step-by-step guide to signing up, navigating the platform, and beginning your TCM learning journey.
+---
+
+## Quick Start
+
+YTMEC provides a comprehensive platform for exploring Traditional Chinese Medicine. You begin your journey by creating an account, setting up your profile, and navigating key sections. Follow these steps to access courses, resources, and community features quickly.
+
+<Callout kind="tip">
+  Prepare your email address and a strong password before starting. The entire signup process takes under 2 minutes.
+</Callout>
+
+## Create an Account and Set Up Your Profile
+
+Use the guided signup flow to get started.
+
+<Steps>
+  <Step title="Visit YTMEC" icon="globe">
+    Open your browser and go to `https://ytmec.com/signup`.
+  </Step>
+  <Step title="Enter Details" icon="user">
+    Provide your email, create a password, and select your experience level (Beginner, Intermediate, or Advanced).
+  </Step>
+  <Step title="Verify Email" icon="mail">
+    Check your inbox for a verification link from `no-reply@ytmec.com` and click it to activate your account.
+  </Step>
+  <Step title="Complete Profile" icon="settings">
+    Add your name, preferred language (English or Traditional Chinese), and interests like Acupuncture or Herbal Medicine.
+  </Step>
+</Steps>
+
+## Explore the Dashboard
+
+Once logged in, your dashboard displays personalized recommendations. Key sections include:
+
+<Columns cols={3}>
+  <Card title="Courses" icon="book-open" href="/dashboard/courses">
+    Enroll in structured TCM lessons with quizzes and certificates.
+  </Card>
+  <Card title="Resources" icon="database" href="/dashboard/resources">
+    Access articles, herb databases, and pulse diagnosis tools.
+  </Card>
+  <Card title="Community" icon="users" href="/dashboard/community">
+    Join forums, ask questions, and connect with practitioners.
+  </Card>
+</Columns>
+
+## Access Introductory Content
+
+Begin with beginner-friendly materials tailored to your profile.
+
+<Tabs>
+  <Tab title="Video Lessons" icon="play-circle">
+    Watch the "TCM Fundamentals" series (5-10 minutes each).
+
+    ```mermaid
+    graph LR
+      A[Login] --> B[Dashboard]
+      B --> C[Videos]
+      C --> D[Complete Lesson]
+      D --> E[Quiz]
+    ```
+  </Tab>
+  <Tab title="Reading Materials" icon="book">
+    Read "Qi and Yin-Yang Basics" – download as PDF for offline use.
+  </Tab>
+  <Tab title="Interactive Quiz" icon="check-circle">
+    Test your knowledge with the introductory quiz (10 questions).
+  </Tab>
+</Tabs>
+
+## Tips for First-Time Users
+
+<ExpandableGroup>
+  <Expandable title="Customize Notifications" default-open="true">
+    Go to Settings `{}` > Notifications to select updates on new courses or forum replies.
+  </Expandable>
+  <Expandable title="Bookmark Content">
+    Click the star icon on any lesson to save it to your dashboard.
+  </Expandable>
+</ExpandableGroup>
+
+<Callout kind="info">
+  Mobile users: Download the PWA by adding `https://ytmec.com` to your home screen for app-like access.
+</Callout>
+
+## Next Steps
+
+Track progress in your dashboard and aim to complete one introductory module daily. For integration examples:
+
+<CodeGroup tabs="JavaScript,Python">
+  ```javascript
+  // Embed YTMEC widget on your site
+  const script = document.createElement('script');
+  script.src = 'https://ytmec.com/widget.js';
+  script.setAttribute('data-user', 'your-email@example.com');
+  document.head.appendChild(script);
+  ```
+  ```python
+  # Fetch user progress via API
+  import requests
+  response = requests.get(
+    'https://api.ytmec.com/v1/progress',
+    headers={'Authorization': 'Bearer YOUR_TOKEN'}
+  )
+  print(response.json())
+  ```
+</CodeGroup>
+
+You're now ready to dive into TCM with YTMEC!

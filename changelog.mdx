@@ -1,0 +1,136 @@
+---
+title: YTMEC Changelog
+description: A record of updates, new features, and improvements to the YTMEC platform.
+---
+
+## Overview
+
+Stay informed about the latest enhancements to YTMEC, your comprehensive Traditional Chinese Medicine platform. You access detailed release notes below, including new features for herb research, consultation tools, and user experience improvements. Review these changes to leverage the newest capabilities in your TCM studies and practice.
+
+<Columns cols={3}>
+  <Card title="Quick Start Guide" icon="book-open" href="/docs/quickstart">
+    Get started with core features in minutes.
+  </Card>
+  <Card title="API Reference" icon="code" href="/docs/api">
+    Integrate YTMEC data into your applications.
+  </Card>
+  <Card title="User Forum" icon="users" href="/forum">
+    Discuss updates with the community.
+  </Card>
+</Columns>
+
+## Recent Releases
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added advanced herb interaction checker: Analyze combinations of up to 10 TCM herbs for safety and efficacy.
+- Introduced pulse diagnosis simulator: Practice reading pulse qualities with interactive audio and visual guides.
+- Launched mobile app sync: Seamlessly access your saved formulas and patient notes across devices.
+
+## Improvements
+
+- Enhanced search algorithm for meridian pathways, reducing query time by 40%.
+- Updated acupuncture point database with 361+ points, including high-resolution 3D models.
+
+## Bug Fixes
+
+- Resolved issue where formula export failed for ingredients exceeding 20 characters.
+- Fixed consultation scheduling overlap detection in timezone conversions.
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Personalized TCM learning paths: Generate study plans based on your quiz results and goals.
+- Community formula sharing: Upload and rate user-submitted herbal recipes with moderation tools.
+- Integration with wearable devices: Track qi flow metrics from fitness trackers.
+
+## Bug Fixes
+
+- Corrected meridian chart rendering on high-DPI screens.
+- Patched authentication vulnerability in shared consultation links.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["feature", "breaking"]}>
+
+## Initial Release
+
+- Core TCM encyclopedia with 500+ herb profiles, including pinyin, latin names, and pharmacological data.
+- Virtual consultation booking system supporting video calls and chat.
+- User dashboard for tracking study progress, saved searches, and certification milestones.
+
+## Breaking Changes
+
+- Migrated to new authentication flow: Use OAuth 2.0 for all API endpoints.
+
+</Update>
+
+<Callout kind="info">
+Subscribe to email notifications to receive changelog updates directly. Visit your account settings and enable "Release Notes".
+</Callout>
+
+## How to Upgrade
+
+Follow these steps to ensure you run the latest version of YTMEC features.
+
+<Steps>
+  <Step title="Check Current Version" icon="check-circle">
+    Log in to your dashboard and view the version badge in the footer.
+  </Step>
+  <Step title="Clear Cache" icon="refresh-cw">
+    
+    ```bash
+    # Browser cache
+    Ctrl+Shift+R (or Cmd+Shift+R on macOS)
+    ```
+    
+  </Step>
+  <Step title="Update Bookmarks" icon="bookmark">
+    Refresh any saved formula or consultation links to apply new security protocols.
+  </Step>
+</Steps>
+
+## Upcoming Changes
+
+<Expandable title="Preview v1.3.0 (November 2024)" default-open="false">
+
+Expect AI-powered syndrome differentiation tools and expanded dietary therapy modules. You differentiate patient symptoms faster with pattern recognition algorithms trained on classical TCM texts.
+
+- Beta access opens mid-November.
+- Report feedback via the in-app form.
+
+</Expandable>
+
+<Tabs>
+  <Tab title="Feature Summary" icon="star">
+    
+    | Version | Key Addition              | Impact                  |
+    |---------|---------------------------|-------------------------|
+    | v1.2.0  | Herb interaction checker | Safer prescribing      |
+    | v1.1.0  | Learning paths           | Personalized education |
+    | v1.0.0  | Core encyclopedia        | Foundation knowledge   |
+    
+  </Tab>
+  <Tab title="API Changes" icon="code">
+    <CodeGroup tabs="JavaScript,Python">
+      ```javascript
+      // New endpoint for herb interactions
+      const interactions = await fetch('/api/herbs/interact', {
+        method: 'POST',
+        body: JSON.stringify({ herbs: ['gan-cao', 'bai-shao'] })
+      });
+      ```
+      ```python
+      import requests
+      response = requests.post('/api/herbs/interact', json={
+          'herbs': ['gan-cao', 'bai-shao']
+      })
+      ```
+    </CodeGroup>
+  </Tab>
+</Tabs>
